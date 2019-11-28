@@ -1,0 +1,8 @@
+<h2>Skills Details</h2>
+
+<div *ngIf="skill">
+        <h3>{{ skill.name }}</h3>
+        <h4>{{ skill.price | currency }}</h4>
+        <p>{{ skill.description }}</p>
+        <button (click)="addToCart(skill)">Add</button>
+</div>
